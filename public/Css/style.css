@@ -1,0 +1,125 @@
+/* Universal Star Operator */
+* ,
+*::before ,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+/* Root Css Variables */
+:root {
+    --red: #D13438;
+    --grey: #ccc;
+    --green: #00CC6A;
+    --soft-white: #f1f1f1;
+}
+body {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Container */
+.main-container {
+    width: 90vw;
+    height: auto;
+    min-height: 80vh;
+    padding: 1rem;
+    background-color: var(--soft-white);
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+/* Form Input */ 
+.form-input {
+    margin: 1rem 0 1.5rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/* Form Input Icon */
+.form-input .fa {
+    position: absolute;
+    left: 90%;
+    top: 3.4rem;
+    font-size: 2rem;
+} 
+
+/* Input Section */
+.form .input {
+    width: 100%;
+    min-height: 4rem;
+    padding: .5rem;
+    /* border: 2px var(--grey); */
+}
+.input:focus {
+    border: 2px solid var(--grey);
+    outline: 0;
+}
+
+/* Input Border Color */
+.input .inputError {
+    border-color: 2px solid var(--red);
+} /*
+.input .inputSucess {
+    width: 100%;
+    height: 4rem;
+    padding: .5rem;
+    border: 2px var(--green);
+    outline: 0;
+} */
+
+/* Input Heading */
+.form .head {
+    font-size: 1.5rem;
+    margin: 0 0 0.7rem 0;
+}
+
+/* Sucess Check Icon */
+.fa-check-circle {
+    color: var(--green);
+    visibility: hidden;
+} 
+.form .sucess .fa-check-circle {
+    visibility: visible;
+}
+
+/* Error Check Icon */
+.fa-exclamation-circle {
+    color: var(--red);
+    visibility: hidden;
+}
+.form .error .fa-exclamation-circle {
+    visibility: visible;
+}
+
+/* small tag error message */
+.form .errMsg {
+    visibility: 0;
+}
+.form .errMsg .smallError {
+    visibility: 1;
+    color: var(--red);
+}
+
+/* Form Submit Button */
+.form .submit {
+    padding: 0.5rem 0.8rem;
+    border: 2px solid #000;
+    background: #fff;
+}
+.form .submit:focus {
+    outline: 0;
+}

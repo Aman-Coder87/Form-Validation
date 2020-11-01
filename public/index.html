@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!-- Font Awosome cdn.js links version 4.7.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" />
+        <!-- Local Css File --> 
+        <link rel="stylesheet" href="./Css/style.css" />
+        <!-- Page Title and favicon -->
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <!-- Form Validation main section that occupies 100vh/vw -->
+        <div class="main-container">
+            <!-- Main Form Validation -->
+            <form id="form" class="form" action="" method="get" accept-charset="utf-8">
+                <!-- Form UserName -->
+                <div class="form-input">
+                    <p class="head">UserName</p>
+                    <input class="input" type="username" name="username" id="username" autocomplete="off" placeholder="Please enter your name"/>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small class="errMsg"></small>
+                </div>
+                <!-- Form User Number -->
+                <div class="form-input">
+                    <p class="head">Number</p>
+                    <input class="input" type="number" name="number" id="number" placeholder="Please enter your name"/>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small class="errMsg"></small>
+                </div>
+                <!-- Form User Email -->
+                <div class="form-input">
+                    <p class="head">Email</p>
+                    <input class="input" type="email" name="email" id="email" placeholder="Please enter your name"/>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small class="errMsg"></small>
+                </div>
+                <!-- Form User Password -->
+                <div class="form-input">
+                    <p class="head">Password</p>
+                    <input class="input" type="password" name="password" id="password" autocomplete="off" placeholder="Please enter your name"/>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small class="errMsg"></small>
+                </div>
+                <!-- Form Confirm Password -->
+                <div class="form-input">
+                    <p class="head">Confirm Password</p>
+                    <input class="input" type="password" name="password" id="confirmPassword" autocomplete="off" placeholder="Please enter your name"/>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small class="errMsg"></small>
+                </div>
+                <!-- User Submit Button -->
+                <button class="submit" type="submit">submit</button>
+            </form>
+        </div>
+        
+        <!-- local javascript File -->
+        <script src="./Js/main.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
